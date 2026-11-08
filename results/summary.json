@@ -1,0 +1,113 @@
+{
+  "dataset": "Kenney Generic Items / CC0",
+  "training_images": 32,
+  "holdout_images": 8,
+  "dataset_manifest_sha256": "ea534c6343473e65e2370881b6a37e4b48d674f5185e7bdfd32cb5b3326f580f",
+  "optimizer_steps": 80,
+  "sample_uses": 320,
+  "passes_per_image": 10,
+  "checkpoint_steps": [
+    8,
+    40,
+    80
+  ],
+  "training_completed_process_seconds": 331.31335190008394,
+  "training_recorded_compute_lower_bound_seconds": 675.5019549001008,
+  "recorded_executed_updates_including_replayed_work": 110,
+  "interruption": {
+    "detected_date": "2026-11-08T23:04:08.487307+08:00",
+    "status": "interrupted_without_final_summary",
+    "last_recorded_step": 70,
+    "recoverable_step": 40,
+    "recorded_process_updates": 62,
+    "recorded_elapsed_lower_bound_seconds": 344.1886030000169,
+    "interruption_time_known": false,
+    "last_state_trainer_hash_matches": true,
+    "note": "Original process stopped without final summary; recover from40. Steps41-70 will be replayed; do not count their elapsed time as zero."
+  },
+  "training_peak_torch_allocated_gib": 5.23760986328125,
+  "training_peak_whole_gpu_sampled_mib": 7749,
+  "paired_images": 12,
+  "additional_resolution_tests": 1,
+  "paired_inference_node_seconds_range": [
+    12.553805900039151,
+    17.54584740009159
+  ],
+  "gpu": "NVIDIA GeForce RTX 3060 Ti",
+  "torch": "2.6.0+cu124",
+  "torch_cuda": "12.4",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "diffusers": "0.32.2",
+    "peft": "0.14.0",
+    "transformers": "4.49.0",
+    "bitsandbytes": "0.46.1",
+    "safetensors": "0.5.3",
+    "Pillow": "11.1.0",
+    "numpy": "1.26.4"
+  },
+  "configuration": {
+    "experiment_id": "PUBLIC-ICON-R8",
+    "base_family": "SDXL",
+    "base_sha256": "31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b",
+    "resolution": 512,
+    "rank": 8,
+    "lora_alpha": 8,
+    "target_modules": [
+      "to_q",
+      "to_k",
+      "to_v",
+      "to_out.0"
+    ],
+    "batch_size": 1,
+    "gradient_accumulation": 4,
+    "mixed_precision": "fp16",
+    "gradient_checkpointing": true,
+    "optimizer": "AdamW8bit",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "max_steps": 80,
+    "checkpoint_steps": [
+      8,
+      40,
+      80
+    ],
+    "seed": 20261028,
+    "train_text_encoders": false,
+    "method": "frozen VAE/CLIP cache; UNet attention LoRA only; constant LR; no augmentation",
+    "comfyui_tag": "v0.3.26",
+    "comfyui_commit": "9aac21f894a122ddb8d825c57ad61c0db5e630db",
+    "runtime_args": [
+      "--lowvram",
+      "--fp16-unet",
+      "--fp32-vae",
+      "--use-pytorch-cross-attention",
+      "--disable-cuda-malloc",
+      "--deterministic",
+      "--disable-all-custom-nodes",
+      "--preview-method",
+      "none"
+    ],
+    "manifest_sha256": "ea534c6343473e65e2370881b6a37e4b48d674f5185e7bdfd32cb5b3326f580f",
+    "base_checkpoint": "sd_xl_base_1.0.safetensors"
+  },
+  "source_sha256": {
+    "cache.py": "7accd64c27ad1de77c3331b8ec8becf76faca4b792a0a566d3c3e36eae2aeec9",
+    "check_publication.py": "622e15688062289abf974364479a81a836c3161422aa52dff468325c6ba83ea2",
+    "common.py": "e66cd84553451984d907f70266acb8b217ff02de069e6a98a4e71081819be39e",
+    "export_results.py": "7968fc5d86d1b07f20c264acf93b3b3fa3848ad65d51825ca97bcff1603d128b",
+    "infer.py": "c09d778c963d1c12eb7ef0bfad162cbb77ee09223f5b4d1a4a5f6c50d358f232",
+    "native.py": "392f0f1da059ba1c2f09814e6b09b22ef9189fbc4f5b5616da69a1a4582783e9",
+    "prepare_data.py": "797b088956fe33574800bcbfaaf1959981ca3a05fd3d4b00d675a5d0f5c1232c",
+    "serve.py": "4886b3fb0355e8d6210854d0eb95a8f1d5d1b51fdde5d3c221fee977a31ff7a2",
+    "train.py": "d76711980a149f82b0346580b1a053816a5613ab3caef407f5ed0c2f515d191f"
+  },
+  "limits": [
+    "non-blind small-sample visual observations; no human ratings collected",
+    "paired prompt subject categories occur in the training set; no strict unseen-category claim",
+    "no data-size/epoch/learning-rate ablation; no statistical significance claim",
+    "existing environment reused; clean-machine install not separately tested",
+    "attention backward may be nondeterministic; no cross-GPU bitwise promise"
+  ]
+}

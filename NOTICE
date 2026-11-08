@@ -1,0 +1,11 @@
+SDXL Game Icon Lab
+
+Training implementation follows the SDXL LoRA recipe in Hugging Face Diffusers v0.32.2 (Apache-2.0).
+https://github.com/huggingface/diffusers/blob/v0.32.2/examples/text_to_image/train_text_to_image_lora_sdxl.py
+
+Runtime dependency: ComfyUI v0.3.26 (GPL-3.0), not bundled.
+https://github.com/Comfy-Org/ComfyUI
+
+CC0 image assets by Kenney Vleugels / Kenney.nl. See licenses/KENNEY-CC0.txt and data/SOURCE.json.
+SDXL base weights and architecture configuration originate from Stability AI, under their separate OpenRAIL++ license; no base weights are distributed here.
+The fixed-revision model license is included at licenses/SDXL-LICENSE.md.

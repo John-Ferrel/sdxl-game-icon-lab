@@ -1,0 +1,4 @@
+{
+  "comfyui_dir": "tools/ComfyUI",
+  "checkpoint": "tools/ComfyUI/models/checkpoints/sd_xl_base_1.0.safetensors"
+}

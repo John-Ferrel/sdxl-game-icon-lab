@@ -1,0 +1,44 @@
+{
+  "experiment_id": "PUBLIC-ICON-R8",
+  "base_family": "SDXL",
+  "base_sha256": "31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b",
+  "resolution": 512,
+  "rank": 8,
+  "lora_alpha": 8,
+  "target_modules": [
+    "to_q",
+    "to_k",
+    "to_v",
+    "to_out.0"
+  ],
+  "batch_size": 1,
+  "gradient_accumulation": 4,
+  "mixed_precision": "fp16",
+  "gradient_checkpointing": true,
+  "optimizer": "AdamW8bit",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "max_grad_norm": 1.0,
+  "max_steps": 80,
+  "checkpoint_steps": [
+    8,
+    40,
+    80
+  ],
+  "seed": 20261028,
+  "train_text_encoders": false,
+  "method": "frozen VAE/CLIP cache; UNet attention LoRA only; constant LR; no augmentation",
+  "comfyui_tag": "v0.3.26",
+  "comfyui_commit": "9aac21f894a122ddb8d825c57ad61c0db5e630db",
+  "runtime_args": [
+    "--lowvram",
+    "--fp16-unet",
+    "--fp32-vae",
+    "--use-pytorch-cross-attention",
+    "--disable-cuda-malloc",
+    "--deterministic",
+    "--disable-all-custom-nodes",
+    "--preview-method",
+    "none"
+  ]
+}

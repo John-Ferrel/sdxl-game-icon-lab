@@ -1,0 +1,17 @@
+# 机器路径、运行日志、训练图片缓存与权重不进入公开仓库。
+config.local.json
+.venv/
+tools/
+runs/
+dist/
+data/source/
+data/prepared/
+data/manifest.json
+__pycache__/
+*.pyc
+*.pt
+*.safetensors
+*.ckpt
+*.zip
+.env
+.env.*

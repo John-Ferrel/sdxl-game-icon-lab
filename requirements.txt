@@ -1,0 +1,9 @@
+# Python3.12; install torch2.6.0+cu124 from the official PyTorch index separately.
+diffusers==0.32.2
+peft==0.14.0
+transformers==4.49.0
+bitsandbytes==0.46.1
+safetensors==0.5.3
+Pillow==11.1.0
+numpy==1.26.4
+matplotlib==3.10.1

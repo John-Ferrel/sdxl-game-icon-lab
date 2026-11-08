@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-08T23:18:01.359330+08:00",
+  "standalone_data_preparation": {
+    "archive_extracts": true,
+    "no_local_config_in_archive": true,
+    "data_prepare_works_without_original_workspace": true,
+    "prepared_manifest_matches_published": true,
+    "train": 32,
+    "holdout": 8,
+    "full_clean_machine_install_tested": false
+  },
+  "comfyui_http_status": 200,
+  "all_workflow_node_types_and_link_types_match_server": true,
+  "public_loras_discovered": true,
+  "browser_click_tested": false,
+  "optional_canny_inference_executed": false,
+  "paired_generation_successes": 12,
+  "resolution_test": [
+    768,
+    512
+  ],
+  "human_ratings_collected": false,
+  "published_dataset": "Kenney CC0 only",
+  "private_dataset_or_private_lora_exported": false
+}
